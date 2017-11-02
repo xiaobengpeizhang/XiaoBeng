@@ -14,6 +14,7 @@ class PhotosViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         print("Method: \(#function) Line: \(#line) File: \(#file)")
     }

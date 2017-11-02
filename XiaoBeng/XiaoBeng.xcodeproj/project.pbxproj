@@ -12,6 +12,7 @@
 		2DDD1C0E1FAAB0D500331E96 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD1C0D1FAAB0D500331E96 /* PhotosViewController.swift */; };
 		2DDD1C101FAAB0E900331E96 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD1C0F1FAAB0E900331E96 /* ContactViewController.swift */; };
 		2DDD1C131FAAB2AF00331E96 /* P.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD1C121FAAB2AF00331E96 /* P.swift */; };
+		2DDD1C151FAAC3A400331E96 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD1C141FAAC3A400331E96 /* BaseTabBarController.swift */; };
 		2DDD661E1F9D9AA6004DB78B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD661D1F9D9AA6004DB78B /* AppDelegate.swift */; };
 		2DDD66231F9D9AA6004DB78B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD66211F9D9AA6004DB78B /* Main.storyboard */; };
 		2DDD66251F9D9AA6004DB78B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDD66241F9D9AA6004DB78B /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		2DDD1C0D1FAAB0D500331E96 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		2DDD1C0F1FAAB0E900331E96 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		2DDD1C121FAAB2AF00331E96 /* P.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P.swift; sourceTree = "<group>"; };
+		2DDD1C141FAAC3A400331E96 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		2DDD661A1F9D9AA6004DB78B /* XiaoBeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaoBeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDD661D1F9D9AA6004DB78B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DDD66221F9D9AA6004DB78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		2DDD1C061FAAAFB900331E96 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2DDD1C141FAAC3A400331E96 /* BaseTabBarController.swift */,
 				2DDD1C091FAAB01C00331E96 /* QuizViewController.swift */,
 				2DDD1C0B1FAAB0B700331E96 /* RecordViewController.swift */,
 				2DDD1C0D1FAAB0D500331E96 /* PhotosViewController.swift */,
@@ -311,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DDD1C151FAAC3A400331E96 /* BaseTabBarController.swift in Sources */,
 				2DDD1C131FAAB2AF00331E96 /* P.swift in Sources */,
 				2DDD1C0C1FAAB0B700331E96 /* RecordViewController.swift in Sources */,
 				2DDD1C0E1FAAB0D500331E96 /* PhotosViewController.swift in Sources */,
@@ -483,6 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZDZ5JUD93N;
 				INFOPLIST_FILE = "$(SRCROOT)/XiaoBeng/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = peizhang.XiaoBeng;
@@ -497,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZDZ5JUD93N;
 				INFOPLIST_FILE = "$(SRCROOT)/XiaoBeng/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = peizhang.XiaoBeng;
