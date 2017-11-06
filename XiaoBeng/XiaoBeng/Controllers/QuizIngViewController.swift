@@ -28,7 +28,10 @@ class QuizIngViewController: UIViewController {
         super.viewDidLoad()
         
         setupQuestion()
+        
     }
+    
+ 
     
     /*根据当前问题索引设置问题*/
     func setupQuestion() {
@@ -69,8 +72,8 @@ class QuizIngViewController: UIViewController {
     
     /*结束测验*/
     func finishQuiz()  {
-        computeScore()
         markHistory()
+        goFinish()
     }
     
     /*添加历史记录*/
@@ -78,10 +81,19 @@ class QuizIngViewController: UIViewController {
         
     }
     
-    /*分数结算*/
-    func computeScore() {
-        print("getScore: \(currentScore)")
+    /*前往完成界面*/
+    func goFinish() {
+    
+        self.performSegue(withIdentifier: "finish", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        let finish = segue.destination as! QuizFinishViewController
+        finish.quizScore = currentScore
+    }
+
+    
     
     /*结算界面*/
 }
