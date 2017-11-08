@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class PrizeViewController: UIViewController {
+class PrizeViewController: BaseViewController {
     @IBOutlet var prizeCG: UIImageView!
     @IBOutlet var viewUnlockedCGButton: UIButton!
     @IBOutlet var resetAllCGButton: UIButton!

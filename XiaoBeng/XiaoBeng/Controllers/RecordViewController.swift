@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// 记录模块控制器
-class RecordViewController: UIViewController {
+class RecordViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

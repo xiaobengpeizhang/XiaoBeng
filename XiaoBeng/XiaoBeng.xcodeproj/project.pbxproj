@@ -10,6 +10,8 @@
 		2D5FB18F1FB024DC003010E8 /* QuizFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5FB18E1FB024DC003010E8 /* QuizFinishViewController.swift */; };
 		2D5FB1911FB02EE9003010E8 /* PrizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5FB1901FB02EE9003010E8 /* PrizeViewController.swift */; };
 		2D5FB1951FB0391F003010E8 /* CGStroe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5FB1941FB0391F003010E8 /* CGStroe.swift */; };
+		2D62FF861FB2DBDB00BC7342 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D62FF851FB2DBDB00BC7342 /* BaseViewController.swift */; };
+		2D62FF921FB2F5CA00BC7342 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D62FF8E1FB2F5C000BC7342 /* SnapKit.framework */; };
 		2DDD1C0A1FAAB01C00331E96 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD1C091FAAB01C00331E96 /* QuizViewController.swift */; };
 		2DDD1C0C1FAAB0B700331E96 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD1C0B1FAAB0B700331E96 /* RecordViewController.swift */; };
 		2DDD1C0E1FAAB0D500331E96 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD1C0D1FAAB0D500331E96 /* PhotosViewController.swift */; };
@@ -27,6 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2D62FF8D1FB2F5C000BC7342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D62FF881FB2F5C000BC7342 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		2D62FF8F1FB2F5C000BC7342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D62FF881FB2F5C000BC7342 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit Tests";
+		};
 		2DDD662F1F9D9AA7004DB78B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2DDD66121F9D9AA6004DB78B /* Project object */;
@@ -47,6 +63,8 @@
 		2D5FB18E1FB024DC003010E8 /* QuizFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizFinishViewController.swift; sourceTree = "<group>"; };
 		2D5FB1901FB02EE9003010E8 /* PrizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeViewController.swift; sourceTree = "<group>"; };
 		2D5FB1941FB0391F003010E8 /* CGStroe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGStroe.swift; sourceTree = "<group>"; };
+		2D62FF851FB2DBDB00BC7342 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2D62FF881FB2F5C000BC7342 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = ../../SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
 		2DDD1C091FAAB01C00331E96 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		2DDD1C0B1FAAB0B700331E96 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		2DDD1C0D1FAAB0D500331E96 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D62FF921FB2F5CA00BC7342 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +113,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D62FF891FB2F5C000BC7342 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D62FF8E1FB2F5C000BC7342 /* SnapKit.framework */,
+				2D62FF901FB2F5C000BC7342 /* SnapKit Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D62FF911FB2F5CA00BC7342 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2DDD1C061FAAAFB900331E96 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2D62FF851FB2DBDB00BC7342 /* BaseViewController.swift */,
 				2DDD1C141FAAC3A400331E96 /* BaseTabBarController.swift */,
 				2DDD1C091FAAB01C00331E96 /* QuizViewController.swift */,
 				2DDD1C181FACA27800331E96 /* QuizIngViewController.swift */,
@@ -138,10 +174,12 @@
 		2DDD66111F9D9AA6004DB78B = {
 			isa = PBXGroup;
 			children = (
+				2D62FF881FB2F5C000BC7342 /* SnapKit.xcodeproj */,
 				2DDD661C1F9D9AA6004DB78B /* XiaoBeng */,
 				2DDD66311F9D9AA7004DB78B /* XiaoBengTests */,
 				2DDD663C1F9D9AA7004DB78B /* XiaoBengUITests */,
 				2DDD661B1F9D9AA6004DB78B /* Products */,
+				2D62FF911FB2F5CA00BC7342 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,6 +326,12 @@
 			mainGroup = 2DDD66111F9D9AA6004DB78B;
 			productRefGroup = 2DDD661B1F9D9AA6004DB78B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2D62FF891FB2F5C000BC7342 /* Products */;
+					ProjectRef = 2D62FF881FB2F5C000BC7342 /* SnapKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2DDD66191F9D9AA6004DB78B /* XiaoBeng */,
@@ -296,6 +340,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2D62FF8E1FB2F5C000BC7342 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 2D62FF8D1FB2F5C000BC7342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2D62FF901FB2F5C000BC7342 /* SnapKit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit Tests.xctest";
+			remoteRef = 2D62FF8F1FB2F5C000BC7342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2DDD66181F9D9AA6004DB78B /* Resources */ = {
@@ -329,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D62FF861FB2DBDB00BC7342 /* BaseViewController.swift in Sources */,
 				2DDD1C191FACA27800331E96 /* QuizIngViewController.swift in Sources */,
 				2DDD1C151FAAC3A400331E96 /* BaseTabBarController.swift in Sources */,
 				2DDD1C131FAAB2AF00331E96 /* P.swift in Sources */,

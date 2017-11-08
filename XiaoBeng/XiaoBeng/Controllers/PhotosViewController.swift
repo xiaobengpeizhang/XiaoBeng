@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// 每日一照模块控制器
-class PhotosViewController: UIViewController {
+class PhotosViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

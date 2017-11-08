@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class QuizIngViewController: UIViewController {
+class QuizIngViewController: BaseViewController {
     
     var currentQuestionIndex: Int = 0   /*当前问题索引*/
     var currentScore: Int = 0   /*当前分数*/
@@ -28,7 +28,7 @@ class QuizIngViewController: UIViewController {
         super.viewDidLoad()
         
         setupQuestion()
-        
+        setupBar()
     }
     
  
@@ -92,8 +92,14 @@ class QuizIngViewController: UIViewController {
         let finish = segue.destination as! QuizFinishViewController
         finish.quizScore = currentScore
     }
-
     
+    func setupBar() {
+        oneBarButton.isHidden = false
+        oneBarButton.setTitle("终止测验", for: .normal)
+        
+    }
     
-    /*结算界面*/
+    override func clickOneButton() {
+        print("测验终止了")
+    }
 }

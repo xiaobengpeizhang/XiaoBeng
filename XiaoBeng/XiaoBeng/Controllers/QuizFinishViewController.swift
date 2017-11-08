@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class QuizFinishViewController: UIViewController {
+class QuizFinishViewController: BaseViewController {
     var quizScore: Int = 0
     @IBOutlet var scoreLabel: UILabel!
     @IBOutlet var getPrizeButton: UIButton!

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// 联系模块控制器
-class ContactViewController: UIViewController {
+class ContactViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
