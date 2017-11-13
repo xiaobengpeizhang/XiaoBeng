@@ -28,7 +28,6 @@ class QuizIngViewController: BaseViewController {
         super.viewDidLoad()
         
         setupQuestion()
-        setupBar()
     }
     
  
@@ -93,10 +92,11 @@ class QuizIngViewController: BaseViewController {
         finish.quizScore = currentScore
     }
     
-    func setupBar() {
+    override func setupNavBar() {
+        super.setupNavBar()
+        
         oneBarButton.isHidden = false
         oneBarButton.setTitle("终止测验", for: .normal)
-        
     }
     
     override func clickOneButton() {

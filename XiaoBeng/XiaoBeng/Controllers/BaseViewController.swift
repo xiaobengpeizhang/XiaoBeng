@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SnapKit
 
 class BaseViewController: UIViewController {
     
@@ -17,21 +16,31 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupNavBar()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        print(oneBarButton.bounds.height)
+//        print(oneBarButton.bounds.height)
     }
     
     /*自定义导航条*/
     func setupNavBar() {
         hideSystemBar()
         customTopBar()
+        
+        #if os(iOS) || os(tvOS)
+            print("ios")
+        #else
+            
+        #endif
+        
     }
+    
+    
+    
+    
     
     /*隐藏系统导航条*/
     func hideSystemBar() {
@@ -40,23 +49,22 @@ class BaseViewController: UIViewController {
     
     /*自定义自己的导航条*/
     func customTopBar() {
+        
         topBar = UIView()
-        topBar.backgroundColor = UIColor.red
+        topBar.backgroundColor = UIColor.white
         view.addSubview(topBar)
+        
         topBar.snp.makeConstraints { (make) in
             make.height.equalTo(64)
             make.leading.trailing.top.equalToSuperview()
         }
-        
+
         oneBarButton = UIButton(type: .system)
         topBar.addSubview(oneBarButton)
         oneBarButton.snp.makeConstraints { (make) in
-//            make.width.equalTo(60)
-//            make.height.equalTo(44)
             make.leading.equalTo(20)
             make.bottom.equalToSuperview()
         }
-        oneBarButton.backgroundColor = UIColor.cyan
         oneBarButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         oneBarButton.isHidden = true
         oneBarButton.setTitle("test", for: .normal)

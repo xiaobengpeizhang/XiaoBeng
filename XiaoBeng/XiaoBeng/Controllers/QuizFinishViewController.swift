@@ -27,4 +27,6 @@ class QuizFinishViewController: BaseViewController {
             getPrizeButton.isHidden = false
         }
     }
+    
+    
 }

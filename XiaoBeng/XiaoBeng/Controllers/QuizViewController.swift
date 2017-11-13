@@ -15,17 +15,19 @@ class QuizViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupBar()
         print("Method: \(#function) Line: \(#line) File: \(#file)")
-    }
-    
-    func setupBar() {
-        oneBarButton.isHidden = false
-        oneBarButton.setTitle("历史成绩", for: .normal)
     }
     
     override func clickOneButton() {
         print("浏览历史成绩")
+    }
+    
+    override func setupNavBar() {
+        super.setupNavBar()
+        
+        oneBarButton.isHidden = false
+        oneBarButton.setTitle("历史成绩", for: .normal)
+        print("gogo")
     }
     
 }
