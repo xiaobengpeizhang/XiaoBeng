@@ -77,12 +77,16 @@ class QuizIngViewController: BaseViewController {
     
     /*添加历史记录*/
     func markHistory() {
-        
+        let quizItem = QuizItem()
+        quizItem.score = currentScore
+        print(Date())
+//        quizItem.date = Date()
+//        QuizStore.quizs.append(quizItem)
+        QuizStore.addQuizItem(item: quizItem)
     }
     
     /*前往完成界面*/
     func goFinish() {
-    
         self.performSegue(withIdentifier: "finish", sender: self)
     }
     
@@ -99,7 +103,18 @@ class QuizIngViewController: BaseViewController {
         oneBarButton.setTitle("终止测验", for: .normal)
     }
     
+    /* 终止测试 */
     override func clickOneButton() {
-        print("测验终止了")
+        let alert = UIAlertController(title: "警告", message: "你真的要放弃这次测验吗？", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "我点错了", style: .cancel, handler: nil)
+        let confirmAction = UIAlertAction(title: "没有新意", style: .destructive) { (action) in
+            self.navigationController?.popViewController(animated: true)
+        }
+        alert.addAction(cancelAction)
+        alert.addAction(confirmAction)
+        present(alert, animated: true, completion: nil)
     }
+    
+    
+    
 }

@@ -13,6 +13,8 @@ class PrizeViewController: BaseViewController {
     @IBOutlet var prizeCG: UIImageView!
     @IBOutlet var viewUnlockedCGButton: UIButton!
     @IBOutlet var resetAllCGButton: UIButton!
+    @IBOutlet var describe1: UILabel!
+    @IBOutlet var describe2: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +29,26 @@ class PrizeViewController: BaseViewController {
             viewUnlockedCGButton.isHidden = false
             resetAllCGButton.isHidden = false
             prizeCG.isHidden = true
+            describe1.isHidden = false
+            describe2.isHidden = false
             return
         }
         prizeCG.image = UIImage(named: CGStroe.lockedCG[0])
         CGStroe.unlockStep() 
     }
+    
+    
+    override func setupNavBar() {
+        super.setupNavBar()
+        oneBarButton.setTitle("回到首页", for: .normal)
+    }
+    
+    /* 回到首页 */
+    override func clickOneButton() {
+       self.navigationController?.popToRootViewController(animated: true)
+    }
+    
+    
     
     /*查看所有解锁的CG*/
     @IBAction func viewUnlockedCG(_ sender: UIButton) {
@@ -41,6 +58,11 @@ class PrizeViewController: BaseViewController {
     /*重置所有CG*/
     @IBAction func resetAllCG(_ sender: UIButton) {
         CGStroe.reset()
+//        viewUnlockedCGButton.isHidden = false
+//        resetAllCGButton.isHidden = false
+//        prizeCG.isHidden = true
+//        describe1.isHidden = false
+//        describe2.isHidden = false
     }
     
 }

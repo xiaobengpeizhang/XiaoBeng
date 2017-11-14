@@ -20,6 +20,9 @@ class QuizViewController: BaseViewController {
     
     override func clickOneButton() {
         print("浏览历史成绩")
+        
+        self.performSegue(withIdentifier: "history", sender: nil)
+        
     }
     
     override func setupNavBar() {
@@ -27,7 +30,6 @@ class QuizViewController: BaseViewController {
         
         oneBarButton.isHidden = false
         oneBarButton.setTitle("历史成绩", for: .normal)
-        print("gogo")
     }
     
 }

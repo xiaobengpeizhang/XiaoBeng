@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var topBar: UIView!
     var oneBarButton: UIButton!
@@ -19,29 +19,12 @@ class BaseViewController: UIViewController {
         setupNavBar()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-//        print(oneBarButton.bounds.height)
-    }
-    
     /*自定义导航条*/
     func setupNavBar() {
         hideSystemBar()
         customTopBar()
-        
-        #if os(iOS) || os(tvOS)
-            print("ios")
-        #else
-            
-        #endif
-        
     }
-    
-    
-    
-    
-    
+        
     /*隐藏系统导航条*/
     func hideSystemBar() {
         self.navigationController?.navigationBar.isHidden = true
@@ -66,8 +49,7 @@ class BaseViewController: UIViewController {
             make.bottom.equalToSuperview()
         }
         oneBarButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        oneBarButton.isHidden = true
-        oneBarButton.setTitle("test", for: .normal)
+        oneBarButton.setTitle("", for: .normal)
         print("height: \(oneBarButton.bounds.height)")
         oneBarButton.addTarget(self, action: #selector(clickOneButton), for: .touchUpInside)
     }

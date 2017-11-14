@@ -23,10 +23,25 @@ class QuizFinishViewController: BaseViewController {
     /*初始化界面*/
     func setup() {
         self.scoreLabel.text = String(quizScore)
-        if quizScore >= 0 {
-            getPrizeButton.isHidden = false
+        if quizScore >= 80 {
+            getPrizeButton.setTitle("查看奖励", for: .normal)
+        } else {
+            getPrizeButton.setTitle("回到首页", for: .normal)
         }
     }
     
+    override func setupNavBar() {
+        super.setupNavBar()
+        
+        oneBarButton.isHidden = true
+    }
+    
+    @IBAction func isGetPrize(sender: UIButton) {
+        if quizScore >= 80 {
+            self.performSegue(withIdentifier: "getCG", sender: nil)
+        } else {
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+    }
     
 }
