@@ -18,6 +18,15 @@ class QuizFinishViewController: BaseViewController {
         super.viewDidLoad()
 
         setup()
+        
+        print(self)
+        print(UIApplication.shared.activityViewController()!)
+        if (self == UIApplication.shared.activityViewController()!) {
+            print("equal")
+        } else {
+            print("no")
+        }
+        
     }
     
     /*初始化界面*/

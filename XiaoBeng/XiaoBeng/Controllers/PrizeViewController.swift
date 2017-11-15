@@ -18,7 +18,7 @@ class PrizeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
         setup()
     }
     
