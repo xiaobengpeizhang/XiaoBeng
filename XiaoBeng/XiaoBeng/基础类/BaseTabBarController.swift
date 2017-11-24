@@ -21,7 +21,7 @@ class BaseTabBarController: UITabBarController {
     
     /// 配置原始图片
     func setup() {
-        let iconNames = ["quiz", "record", "photos", "contact"];
+        let iconNames = ["quiz", "photos"];
         
         for (index, iconName) in iconNames.enumerated() {
             self.childViewControllers[index].tabBarItem.image = UIImage(named: iconName)?.withRenderingMode(.alwaysOriginal)
