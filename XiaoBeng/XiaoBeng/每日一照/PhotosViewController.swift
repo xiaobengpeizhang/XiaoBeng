@@ -23,13 +23,14 @@ class PhotosViewController: UITableViewController {
         super.viewDidLoad()
     
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 65
+        tableView.estimatedRowHeight = 150
+        tableView.separatorStyle = .none
     }
     
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
         return formatter
     }()
 
@@ -41,9 +42,13 @@ class PhotosViewController: UITableViewController {
         cell.titleLabel.text = item.title
         cell.dateLabel.text = dateFormatter.string(from: item.date)
         if let image = PhotoStore.photoStore.image(forKey: item.itemKey) {
-            cell.photoImageView?.image = image.roundCornersToCircle()
+            cell.photoImageView?.image = image
+            cell.photoImageView?.clipsToBounds = true
+            cell.photoImageView?.layer.cornerRadius = 60
+            cell.photoImageView?.layer.borderWidth = 2.0
+            cell.photoImageView?.layer.borderColor = UIColor.orange.cgColor
         }
-        
+
         return cell
     }
     
@@ -104,6 +109,17 @@ class PhotosViewController: UITableViewController {
             
             // Present the alert controller
             present(ac, animated: true, completion: nil)
+        }
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        if navigationItem.leftBarButtonItem?.title == "Done" {
+            print("完成")
+            navigationItem.leftBarButtonItem?.title = "完成"
+        } else {
+            print("bianji bianji")
+            navigationItem.leftBarButtonItem?.title = "编辑"
         }
     }
     

@@ -502,5 +502,164 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XiaoBeng/&#x6bcf;&#x65e5;&#x4e00;&#x7167;/DetailPhotoViewController.swift"
+            timestampString = "533466715.417085"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "init(coder:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XiaoBeng/&#x6bcf;&#x65e5;&#x4e00;&#x7167;/DetailPhotoViewController.swift"
+            timestampString = "533466715.417901"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "DetailPhotoViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XiaoBeng.DetailPhotoViewController.titleTextField.getter : __ObjC.UITextField"
+                  moduleName = "XiaoBeng"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yangpeizhang/Desktop/OfflineFocusToCode/XiaoBeng/XiaoBeng/XiaoBeng/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%85%A7/DetailPhotoViewController.swift"
+                  timestampString = "533453573.763296"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XiaoBeng.DetailPhotoViewController.titleTextField.setter : __ObjC.UITextField"
+                  moduleName = "XiaoBeng"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yangpeizhang/Desktop/OfflineFocusToCode/XiaoBeng/XiaoBeng/XiaoBeng/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%85%A7/DetailPhotoViewController.swift"
+                  timestampString = "533453573.765242"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "XiaoBeng.DetailPhotoViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;XiaoBeng.DetailPhotoViewController&gt;"
+                  moduleName = "XiaoBeng"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yangpeizhang/Desktop/OfflineFocusToCode/XiaoBeng/XiaoBeng/XiaoBeng/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%85%A7/DetailPhotoViewController.swift"
+                  timestampString = "533453573.766966"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XiaoBeng/&#x6bcf;&#x65e5;&#x4e00;&#x7167;/DetailPhotoViewController.swift"
+            timestampString = "533466715.418368"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "textFieldShouldReturn(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XiaoBeng/&#x6bcf;&#x65e5;&#x4e00;&#x7167;/DetailPhotoViewController.swift"
+            timestampString = "533466715.418807"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "detailImage(tap:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XiaoBeng/&#x6bcf;&#x65e5;&#x4e00;&#x7167;/DetailPhotoViewController.swift"
+            timestampString = "533466715.419206"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "detailImage(tap:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XiaoBeng/&#x6bcf;&#x65e5;&#x4e00;&#x7167;/DetailPhotoViewController.swift"
+            timestampString = "533466715.419604"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "detailImage(tap:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XiaoBeng/&#x6bcf;&#x65e5;&#x4e00;&#x7167;/DetailPhotoViewController.swift"
+            timestampString = "533466729.238169"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "detailImage(tap:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

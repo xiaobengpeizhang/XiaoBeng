@@ -23,4 +23,24 @@ class PhotoCell: UITableViewCell {
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var photoImageView: UIImageView?
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+    
+    }
+    
+    override func draw(_ rect: CGRect) {
+        let path = UIBezierPath()
+        let begin = CGPoint(x: 10, y: 10)
+        let end = CGPoint(x: 10, y: bounds.height - 10)
+        
+        UIColor.orange.setStroke()
+        path.lineWidth = 3.0
+        path.lineCapStyle = .round
+        path.move(to: begin)
+        path.addLine(to: end)
+        path.stroke()
+        path.close()
+    }
+    
 }
