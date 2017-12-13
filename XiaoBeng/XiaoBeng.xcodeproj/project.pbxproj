@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D6074D81FCE876B00AD786E /* PhotoTodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6074D71FCE876B00AD786E /* PhotoTodayCell.swift */; };
+		2D6074FB1FCE994800AD786E /* PostPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6074FA1FCE994800AD786E /* PostPhotoViewController.swift */; };
 		2D6B38341FC829CF00492F0B /* ImageVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6B38321FC829CF00492F0B /* ImageVIewExtension.swift */; };
 		2D6B38351FC829CF00492F0B /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6B38331FC829CF00492F0B /* ImageHelper.swift */; };
 		2D8FE74F1FC7FC4300881743 /* BaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D017CF01FBD6C20007D0DFE /* BaseNavController.swift */; };
@@ -137,6 +139,37 @@
 		2D56C6BD1FB9A8E4002E4EB8 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		2D56C6BE1FB9A8E4002E4EB8 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		2D5FB1941FB0391F003010E8 /* CGStroe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGStroe.swift; sourceTree = "<group>"; };
+		2D6074D71FCE876B00AD786E /* PhotoTodayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTodayCell.swift; sourceTree = "<group>"; };
+		2D6074DA1FCE927800AD786E /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
+		2D6074DB1FCE927800AD786E /* TZPhotoPickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
+		2D6074DC1FCE927800AD786E /* TZImageCropManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
+		2D6074DD1FCE927800AD786E /* TZImageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
+		2D6074DE1FCE927800AD786E /* TZAssetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
+		2D6074DF1FCE927800AD786E /* TZVideoPlayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
+		2D6074E01FCE927800AD786E /* TZAssetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
+		2D6074E11FCE927800AD786E /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
+		2D6074E21FCE927800AD786E /* TZLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZLocationManager.h; sourceTree = "<group>"; };
+		2D6074E31FCE927800AD786E /* TZImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
+		2D6074E41FCE927800AD786E /* UIView+Layout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		2D6074E51FCE927800AD786E /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
+		2D6074E61FCE927800AD786E /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
+		2D6074E71FCE927800AD786E /* TZProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZProgressView.m; sourceTree = "<group>"; };
+		2D6074E81FCE927800AD786E /* TZGifPhotoPreviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZGifPhotoPreviewController.h; sourceTree = "<group>"; };
+		2D6074E91FCE927800AD786E /* TZAssetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
+		2D6074EA1FCE927800AD786E /* TZImageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
+		2D6074EB1FCE927800AD786E /* TZImageCropManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZImageCropManager.h; sourceTree = "<group>"; };
+		2D6074EC1FCE927800AD786E /* TZPhotoPickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
+		2D6074ED1FCE927800AD786E /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
+		2D6074EE1FCE927800AD786E /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
+		2D6074EF1FCE927800AD786E /* TZAssetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
+		2D6074F01FCE927800AD786E /* TZVideoPlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
+		2D6074F11FCE927800AD786E /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
+		2D6074F21FCE927800AD786E /* UIView+Layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		2D6074F31FCE927800AD786E /* TZImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
+		2D6074F41FCE927800AD786E /* TZLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZLocationManager.m; sourceTree = "<group>"; };
+		2D6074F51FCE927800AD786E /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
+		2D6074F61FCE927800AD786E /* TZProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
+		2D6074FA1FCE994800AD786E /* PostPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPhotoViewController.swift; sourceTree = "<group>"; };
 		2D6B38321FC829CF00492F0B /* ImageVIewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVIewExtension.swift; sourceTree = "<group>"; };
 		2D6B38331FC829CF00492F0B /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		2DCC3D551FC80B8D00DD5F27 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
@@ -230,6 +263,71 @@
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
+		2D6074D91FCE927800AD786E /* TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				2D6074DA1FCE927800AD786E /* TZPhotoPreviewCell.h */,
+				2D6074DB1FCE927800AD786E /* TZPhotoPickerController.h */,
+				2D6074DC1FCE927800AD786E /* TZImageCropManager.m */,
+				2D6074DD1FCE927800AD786E /* TZImageManager.h */,
+				2D6074DE1FCE927800AD786E /* TZAssetCell.m */,
+				2D6074DF1FCE927800AD786E /* TZVideoPlayerController.m */,
+				2D6074E01FCE927800AD786E /* TZAssetModel.m */,
+				2D6074E11FCE927800AD786E /* NSBundle+TZImagePicker.m */,
+				2D6074E21FCE927800AD786E /* TZLocationManager.h */,
+				2D6074E31FCE927800AD786E /* TZImagePickerController.h */,
+				2D6074E41FCE927800AD786E /* UIView+Layout.m */,
+				2D6074E51FCE927800AD786E /* TZPhotoPreviewController.m */,
+				2D6074E61FCE927800AD786E /* TZImagePickerController.bundle */,
+				2D6074E71FCE927800AD786E /* TZProgressView.m */,
+				2D6074E81FCE927800AD786E /* TZGifPhotoPreviewController.h */,
+				2D6074E91FCE927800AD786E /* TZAssetCell.h */,
+				2D6074EA1FCE927800AD786E /* TZImageManager.m */,
+				2D6074EB1FCE927800AD786E /* TZImageCropManager.h */,
+				2D6074EC1FCE927800AD786E /* TZPhotoPickerController.m */,
+				2D6074ED1FCE927800AD786E /* TZPhotoPreviewCell.m */,
+				2D6074EE1FCE927800AD786E /* NSBundle+TZImagePicker.h */,
+				2D6074EF1FCE927800AD786E /* TZAssetModel.h */,
+				2D6074F01FCE927800AD786E /* TZVideoPlayerController.h */,
+				2D6074F11FCE927800AD786E /* TZPhotoPreviewController.h */,
+				2D6074F21FCE927800AD786E /* UIView+Layout.h */,
+				2D6074F31FCE927800AD786E /* TZImagePickerController.m */,
+				2D6074F41FCE927800AD786E /* TZLocationManager.m */,
+				2D6074F51FCE927800AD786E /* TZGifPhotoPreviewController.m */,
+				2D6074F61FCE927800AD786E /* TZProgressView.h */,
+			);
+			path = TZImagePickerController;
+			sourceTree = "<group>";
+		};
+		2D6074F71FCE98FC00AD786E /* 控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				2D017CF41FBD6C20007D0DFE /* PhotosViewController.swift */,
+				2DCC3D5D1FC810DF00DD5F27 /* DetailPhotoViewController.swift */,
+				2D6074FA1FCE994800AD786E /* PostPhotoViewController.swift */,
+			);
+			path = "控制器";
+			sourceTree = "<group>";
+		};
+		2D6074F81FCE990B00AD786E /* 视图 */ = {
+			isa = PBXGroup;
+			children = (
+				2DCC3D551FC80B8D00DD5F27 /* PhotoCell.swift */,
+				2D6074D71FCE876B00AD786E /* PhotoTodayCell.swift */,
+			);
+			path = "视图";
+			sourceTree = "<group>";
+		};
+		2D6074F91FCE992300AD786E /* 模型 */ = {
+			isa = PBXGroup;
+			children = (
+				2DCC3D571FC80DC300DD5F27 /* PhotoItem.swift */,
+				2DCC3D5B1FC80F0300DD5F27 /* PhotoItemStore.swift */,
+				2DCC3D591FC80DCE00DD5F27 /* PhotoStore.swift */,
+			);
+			path = "模型";
+			sourceTree = "<group>";
+		};
 		2D62FF911FB2F5CA00BC7342 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,12 +338,9 @@
 		2D8FE74D1FC7F8B900881743 /* 每日一照 */ = {
 			isa = PBXGroup;
 			children = (
-				2D017CF41FBD6C20007D0DFE /* PhotosViewController.swift */,
-				2DCC3D5D1FC810DF00DD5F27 /* DetailPhotoViewController.swift */,
-				2DCC3D551FC80B8D00DD5F27 /* PhotoCell.swift */,
-				2DCC3D571FC80DC300DD5F27 /* PhotoItem.swift */,
-				2DCC3D5B1FC80F0300DD5F27 /* PhotoItemStore.swift */,
-				2DCC3D591FC80DCE00DD5F27 /* PhotoStore.swift */,
+				2D6074F91FCE992300AD786E /* 模型 */,
+				2D6074F81FCE990B00AD786E /* 视图 */,
+				2D6074F71FCE98FC00AD786E /* 控制器 */,
 			);
 			path = "每日一照";
 			sourceTree = "<group>";
@@ -281,6 +376,7 @@
 		2DDD1C111FAAB22100331E96 /* 库 */ = {
 			isa = PBXGroup;
 			children = (
+				2D6074D91FCE927800AD786E /* TZImagePickerController */,
 				2D56C69B1FB9A8E4002E4EB8 /* SnapKit */,
 				2DDD1C121FAAB2AF00331E96 /* P.swift */,
 				2D6B38331FC829CF00492F0B /* ImageHelper.swift */,
@@ -489,6 +585,7 @@
 				2D8FE74F1FC7FC4300881743 /* BaseNavController.swift in Sources */,
 				2D8FE7501FC7FC4300881743 /* BaseTabBarController.swift in Sources */,
 				2D6B38341FC829CF00492F0B /* ImageVIewExtension.swift in Sources */,
+				2D6074FB1FCE994800AD786E /* PostPhotoViewController.swift in Sources */,
 				2D8FE7511FC7FC4300881743 /* BaseViewController.swift in Sources */,
 				2D8FE7531FC7FC4300881743 /* PhotosViewController.swift in Sources */,
 				2D8FE7541FC7FC4300881743 /* HistoryViewController.swift in Sources */,
@@ -508,6 +605,7 @@
 				2D8FE7601FC7FC4300881743 /* ConstraintInsets.swift in Sources */,
 				2D8FE7611FC7FC4300881743 /* ConstraintInsetTarget.swift in Sources */,
 				2D8FE7621FC7FC4300881743 /* ConstraintItem.swift in Sources */,
+				2D6074D81FCE876B00AD786E /* PhotoTodayCell.swift in Sources */,
 				2D8FE7631FC7FC4300881743 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				2D8FE7641FC7FC4300881743 /* ConstraintLayoutGuide.swift in Sources */,
 				2D8FE7651FC7FC4300881743 /* ConstraintLayoutGuideDSL.swift in Sources */,

@@ -6,10 +6,14 @@
 //  Copyright © 2017年 杨佩璋. All rights reserved.
 //
 
+/*
+ *每日一照模块控制器
+ */
+
 import Foundation
 import UIKit
 
-/// 每日一照模块控制器
+
 class PhotosViewController: UITableViewController {
     
     required init?(coder aDecoder: NSCoder) {
@@ -21,7 +25,7 @@ class PhotosViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 150
         tableView.separatorStyle = .none
@@ -35,25 +39,32 @@ class PhotosViewController: UITableViewController {
     }()
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
         
-        let item = PhotoItemStore.photoItemStore.allItems[indexPath.row]
-        
-        cell.titleLabel.text = item.title
-        cell.dateLabel.text = dateFormatter.string(from: item.date)
-        if let image = PhotoStore.photoStore.image(forKey: item.itemKey) {
-            cell.photoImageView?.image = image
-            cell.photoImageView?.clipsToBounds = true
-            cell.photoImageView?.layer.cornerRadius = 60
-            cell.photoImageView?.layer.borderWidth = 2.0
-            cell.photoImageView?.layer.borderColor = UIColor.orange.cgColor
+        switch indexPath.row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoTodayCell", for: indexPath) as! PhotoTodayCell
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
+            
+            let item = PhotoItemStore.photoItemStore.allItems[indexPath.row - 1]
+            
+            cell.titleLabel.text = item.title
+            cell.dateLabel.text = dateFormatter.string(from: item.date)
+            if let image = PhotoStore.photoStore.image(forKey: item.itemKey) {
+                cell.photoImageView?.image = image
+                cell.photoImageView?.clipsToBounds = true
+                cell.photoImageView?.layer.cornerRadius = 60
+                cell.photoImageView?.layer.borderWidth = 2.0
+                cell.photoImageView?.layer.borderColor = UIColor.orange.cgColor
+            }
+            return cell
         }
-
-        return cell
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return PhotoItemStore.photoItemStore.allItems.count
+        return PhotoItemStore.photoItemStore.allItems.count + 1
     }
     
     @IBAction func addNew(barButtonItem: UIBarButtonItem) {
@@ -68,7 +79,7 @@ class PhotosViewController: UITableViewController {
         switch segue.identifier {
         case "showItem"?:
             if let row = tableView.indexPathForSelectedRow?.row {
-                 item = PhotoItemStore.photoItemStore.allItems[row]
+                 item = PhotoItemStore.photoItemStore.allItems[row - 1]
             }
         case "showDetail"?:
             item = sender as! PhotoItem

@@ -6,6 +6,10 @@
 //  Copyright © 2017年 杨佩璋. All rights reserved.
 //
 
+/*
+ * 查看照片控制器
+ */
+
 import UIKit
 
 class DetailPhotoViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate, UIScrollViewDelegate {
@@ -40,8 +44,7 @@ class DetailPhotoViewController: UIViewController, UINavigationControllerDelegat
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
-        
+
     }
     
     @IBAction func takePhoto(_ sender: UIBarButtonItem) {
